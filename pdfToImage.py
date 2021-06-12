@@ -9,7 +9,7 @@ def pdfToImage(page_bytes):
         imagesArray = []
         imagesArray.append(fname)
 
-        image.save("C:\\Users\\Victo\\Documents\\Repositorios\\pdf-converter-api\\" + fname, "PNG")
+        image.save(fname, "PNG")
 
     with ZipFile("Images.zip", 'w') as zipObj:
         for i, images in enumerate(images):
